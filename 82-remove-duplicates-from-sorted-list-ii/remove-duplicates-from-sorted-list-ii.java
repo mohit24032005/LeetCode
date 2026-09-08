@@ -24,7 +24,6 @@ class Solution {
                 head = head.next;
             }
         }
-        
         ptr.next = null;
         return res.next;
     }
