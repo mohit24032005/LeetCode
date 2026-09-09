@@ -11,20 +11,13 @@ class Solution {
         }
 
         head = originalHead;
-
-        // If removing the first node
         if (n == s) {
             return head.next;
         }
-
-        // Move to node before the node to remove
         for (int i = 1; i < s - n; i++) {
             head = head.next;
         }
-
-        // Remove the node
         head.next = head.next.next;
-
         return originalHead;
     }
 }
