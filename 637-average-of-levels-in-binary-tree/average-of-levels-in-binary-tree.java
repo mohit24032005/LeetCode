@@ -16,11 +16,14 @@ class Solution {
                 sum += node.val;
                 nodes++;
 
-                if (node.left != null)
-                    levelQueue.add(node.left);
+                if (node.left != null){
 
-                if (node.right != null)
+                    levelQueue.add(node.left);
+                }
+
+                if (node.right != null){
                     levelQueue.add(node.right);
+                }
             }
 
             levelQueue.add(levelQueue.poll());
