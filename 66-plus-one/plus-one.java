@@ -4,7 +4,7 @@ class Solution {
         int n = digits.length;
         int carry = 0;
 
-        for (int i = n - 1; i >= 0; i--) {
+        for (int i = n - 1; i >=0; i--) {
             int a = digits[i] + 1;
             int digit = a % 10;
             carry = a / 10;
